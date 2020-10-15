@@ -1,0 +1,23 @@
+<!--
+  ~ Copyright (c) Akveo 2019. All Rights Reserved.
+  ~ Licensed under the Single Application / Multi Application License.
+  ~ See LICENSE_SINGLE_APP / LICENSE_MULTI_APP in the 'docs' folder for license information on type of purchased license.
+  -->
+
+<nb-card>
+  <nb-card-header>
+    Smart Table
+  </nb-card-header>
+
+  <nb-card-body>
+    <nb-action matRipple>
+      <nb-icon class="action-icon" icon="search-outline" (click)="searchAll()"></nb-icon>
+      <span>Search</span>
+    </nb-action>
+
+    <div class="col-lg-12">
+      <ng2-smart-table class="example-smart-table" [settings]="settings" [source]="source" *ngIf="source" (userRowSelect)="onSearchConfirm($event)">
+      </ng2-smart-table>
+    </div>
+  </nb-card-body>
+</nb-card>

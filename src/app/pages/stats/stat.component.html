@@ -1,0 +1,39 @@
+<!--
+  ~ Copyright (c) Akveo 2019. All Rights Reserved.
+  ~ Licensed under the Single Application / Multi Application License.
+  ~ See LICENSE_SINGLE_APP / LICENSE_MULTI_APP in the 'docs' folder for license information on type of purchased license.
+  -->
+
+<div class="row">
+  <div class="col-lg-6">
+    <nb-card>
+    </nb-card>
+  </div>
+  <div class="col-lg-6">
+    <nb-card>
+      <nb-card-header>Bar</nb-card-header>
+      <nb-card-body>
+        <ngx-stat-bar-legalform *ngIf="dataLegalForm" [data]="dataLegalForm">
+          </ngx-stat-bar-legalform>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-lg-6">
+    <nb-card>
+      <nb-card-header>Bar</nb-card-header>
+      <nb-card-body>
+        <ngx-stat-bar-publication *ngIf="dataPublication" [data]="dataPublication">
+          </ngx-stat-bar-publication>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-lg-6">
+    <nb-card>
+      <nb-card-header>Bar</nb-card-header>
+      <nb-card-body>
+        <ngx-stat-bar-description *ngIf="dataDescription" [data]="dataDescription">
+          </ngx-stat-bar-description>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>
